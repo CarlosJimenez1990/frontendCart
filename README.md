@@ -1,8 +1,12 @@
-Instrucciones para levanta la tienda online
-Descargar los repositorios frontendCart y backendCart
-Utilizar una herramienta como xampp o wanserver para inicializar el repositorio del backendCart
-Configurar el archivo .env de backendCart los parametros de conexion a base de datos
-ejecutar en la terminar el siguiemte comando "php artisan migrate" 
+## Instrucciones para levanta la tienda online
+- Descargar los repositorios frontendCart y backendCart
+- Utilizar una herramienta como xampp o wanserver para inicializar el repositorio del backendCart
+
+- Ejecutar composer install
+
+- Configurar el archivo .env de backendCart los parametros de conexion a base de datos
+- ejecutar en la terminar el siguiemte comando "php artisan migrate" 
+
 luego insertar en la base de datos los siguientes registros
  
  INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `imagen`, `precio`, `created_at`, `updated_at`, `deleted_at`) VALUES
@@ -14,16 +18,18 @@ luego insertar en la base de datos los siguientes registros
 (6, 'Rines', 'R15', 'https://itook.co/1752-large_default/rines-para-bicicletas-de-mtb-deuter-rm22-aluminio-eje-pasante-sistema-boost.jpg', 90.00, NULL, NULL, NULL),
 (7, 'Guantes', 'Proteccion en todo momento.', 'https://www.lidl.es/media/product/0/0/4/0/5/7/2/guantes-de-ciclismo-zoom--3.jpg', 70.00, NULL, NULL, NULL);
 
-inicializar servidor con el siguiente comando "php artisan serve"
+- inicializar servidor con el siguiente comando "php artisan serve"
 
-Luego puede utilizar la herramienta postman
+## postman
 
-GET-localhost:8000/api/clientes
+ Luego puede utilizar la herramienta postman para consultar los siguientes endpoint
 
-GET-localhost:8000/api/ordenes
+- GET-localhost:8000/api/clientes
 
-GET-localhost:8000/api/productos
+- GET-localhost:8000/api/ordenes
 
-GET-localhost:8000/api/ordenes/2
+- GET-localhost:8000/api/productos
 
-POST-localhost:8000/api/ordenes
+- GET-localhost:8000/api/ordenes/2
+
+- POST-localhost:8000/api/ordenes
